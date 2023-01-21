@@ -1,4 +1,4 @@
-{% set version = '0.2.5' %}
+{% set version = "0.2.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dipsaus_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dipsaus/dipsaus_{{ version }}.tar.gz
-  sha256: 89af070ed6c6757d3517fb239a2c8939c0dc2f09ebdb42275b5003831c0b16c0
+  sha256: d3fc8a6609d0eecedeeb2248f72d81950ecb1d2510f023cac114f9486d08d98c
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -90,7 +90,7 @@ about:
     functions to get system information such like CPU chip-set, memory limit, etc.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
