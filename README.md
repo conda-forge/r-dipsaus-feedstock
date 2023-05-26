@@ -1,11 +1,32 @@
+About r-dipsaus-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dipsaus-feedstock/blob/main/LICENSE.txt)
+
 About r-dipsaus
-===============
+---------------
 
 Home: https://github.com/dipterix/dipsaus
 
 Package license: GPL-3.0-only
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dipsaus-feedstock/blob/main/LICENSE.txt)
+Summary: Works as an "add-on" to packages like 'shiny', 'future', as well as 'rlang',
+and provides utility functions. Just like dipping sauce adding flavors to potato
+chips or pita bread, 'dipsaus' for data analysis and visualizations adds handy
+functions and enhancements to popular packages. The goal is to provide simple solutions
+that are frequently asked for online, such as how to synchronize 'shiny' inputs
+without freezing the app, or how to get memory size on 'Linux' or 'MacOS' system.
+The enhancements roughly fall into these four categories: 1. 'shiny' input widgets;
+2. high-performance computing using 'RcppParallel' and 'future' package; 3.
+modify R calls and convert among numbers, strings, and other objects. 4. utility
+functions to get system information such like CPU chip-set, memory limit, etc.
+
+About r-dipsaus
+---------------
+
+Home: https://github.com/dipterix/dipsaus
+
+Package license: GPL-3.0-only
 
 Summary: Works as an "add-on" to packages like 'shiny', 'future', as well as 'rlang',
 and provides utility functions. Just like dipping sauce adding flavors to potato
