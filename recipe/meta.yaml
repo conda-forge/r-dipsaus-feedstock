@@ -1,4 +1,4 @@
-{% set version = "0.2.8" %}
+{% set version = "0.2.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dipsaus_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dipsaus/dipsaus_{{ version }}.tar.gz
-  sha256: 1425a8752b3963f2f5354e26a51f23814030b0ab88ef877d1612f2bea92cabbe
+  sha256: 86e1145a709441dce186b3eb21e5266193b45714f932d0a6cb388e30b4ef7089
 
 build:
   merge_build_host: true  # [win]
@@ -22,7 +22,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]

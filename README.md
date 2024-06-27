@@ -3,6 +3,7 @@ About r-dipsaus-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dipsaus-feedstock/blob/main/LICENSE.txt)
 
+
 About r-dipsaus
 ---------------
 
@@ -20,6 +21,7 @@ The enhancements roughly fall into these four categories: 1. 'shiny' input widge
 2. high-performance computing using 'RcppParallel' and 'future' package; 3.
 modify R calls and convert among numbers, strings, and other objects. 4. utility
 functions to get system information such like CPU chip-set, memory limit, etc.
+
 
 About r-dipsaus
 ---------------
@@ -173,7 +175,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
