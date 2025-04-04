@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dipsaus_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dipsaus/dipsaus_{{ version }}.tar.gz
-  sha256: 33f60d443485192e58d36b62c7aac6d47a09ffdf622398789d2853728d511f77
+  sha256: 5d65dd29925f9307db48d837b1e9bc33e745acde1d204b2f2fb2552de79b1e4c
 
 build:
   number: 0
