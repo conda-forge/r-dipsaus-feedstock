@@ -16,6 +16,10 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+   missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -36,7 +40,6 @@ requirements:
     - r-r6
     - r-rcpp
     - r-base64enc
-    - r-base64url
     - r-cli
     - r-digest
     - r-fastmap >=1.1.0
@@ -47,14 +50,12 @@ requirements:
     - r-rlang >=0.4.0
     - r-rstudioapi >=0.11
     - r-shiny
-    - r-startup
     - r-stringr
   run:
     - r-base
     - r-r6
     - r-rcpp
     - r-base64enc
-    - r-base64url
     - r-cli
     - r-digest
     - r-fastmap >=1.1.0
@@ -65,7 +66,6 @@ requirements:
     - r-rlang >=0.4.0
     - r-rstudioapi >=0.11
     - r-shiny
-    - r-startup
     - r-stringr
 
 test:
